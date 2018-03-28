@@ -1,0 +1,26 @@
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h3 class="panel-title">List des produits</h3>
+    </div>
+    <div class="panel-body">
+
+      <table class="table table-bordered table-hover">
+        <thead>
+          <tr>
+            <th>Code</th>
+            <th>Nom</th>
+            <th>prix unitaire</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor='let prod of data'>
+            <td>{{prod.code}}</td>
+            <td>{{prod.nom}}</td>
+            <td>{{prod.prixUnitaire}}</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+</div>
